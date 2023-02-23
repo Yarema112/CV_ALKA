@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	background-color: #E5E5E5;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main {
+	flex: 1;
+}
+
+
+.header {}
+
+.header__body {
+	background-color: #383838de;
+	color: whitesmoke;
+	border-radius: 10px 10px 0px 0px;
+	margin: 0px 0px 25px 0px;
+}
+
+.body-header {}
+
+.body-header__decor {
+	height: 30px;
+	background-color: #454444;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.body-header__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.body-header__title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 1.3;
+	padding: 20px 0px 0px 0px;
+	animation: name 1s linear infinite alternate 0s forwards;
+	animation-name: name;
+
+}
+
+@keyframes name {
+	0% {
+		color: whitesmoke;
+	}
+
+	100% {
+		color: #ffffff;
+		text-shadow: 0px 0px 2px #fffdfd;
+	}
+}
+
+.body-header__sub-title {
+	position: relative;
+	font-size: 20px;
+	margin-bottom: 70px;
+}
+
+
+
+/* ============ */
+
+.main {}
+
+.main__content {}
+
+.about-me {
+	margin-bottom: 150px;
+}
+
+[class*="__container"] {
+	max-width: 1000px;
+	margin: 0px auto;
+
+}
+
+.about-me__container {
+	background-color: rgb(252, 247, 247);
+	box-shadow: 0px 4px 9px 1px rgb(0 0 0 / 12%);
+}
+
+.about-me__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-me__link {
+	transform: translate(0px, -77px);
+
+}
+
+.about-me__picture {}
+
+.about-me__picture img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0px 0px 0px 4px rgba(249, 249, 249, 0.935), 0px 0px 5px 5px rgb(60 60 60 / 66%);
+}
+
+.about-me__picture img:hover {
+	transform: scale(0.99);
+}
+
+
+.about-me__socity {
+	display: flex;
+	gap: 15px;
+	transform: translate(0px, -36px);
+
+}
+
+.socitu-about-me__fb {
+	background: url('../img/icons8-facebook\ gr.svg') 0 0 / 36px no-repeat;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	transition: all 0.2s ease 0s;
+}
+
+.socitu-about-me__fb:hover {
+	background: url('../img/icons8-facebook\ \(1\).svg') 0 0 / 36px no-repeat;
+	transform: scale(1.09);
+}
+
+.socitu-about-me__insta {
+	background: url('../img/icons8-instagram-circle\ gr.svg') 0 0 / 36px no-repeat;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	transition: all 0.2s ease 0s;
+}
+
+.socitu-about-me__insta:hover {
+	background: url('../img/icons8-instagram-circle.svg') 0 0 / 36px no-repeat;
+	transform: scale(1.09);
+}
+
+.socitu-about-me__gmail {
+	background: url('../img/google-plus\ gr.svg') 0 0 / 36px no-repeat;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	transition: all 0.2s ease 0s;
+}
+
+.socitu-about-me__gmail:hover {
+	background: url('../img/google-plus.svg') 0 0 / 36px no-repeat;
+	transform: scale(1.09);
+}
+
+.about-me__text {
+	text-align: center;
+	padding: 0px 75px;
+	margin-bottom: 50px;
+}
+
+.about-me__btn {
+	padding: 0px 0px 50px 0px;
+
+}
+
+.button-about-me {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	color: #fffdfd;
+	;
+	font-weight: 600;
+}
+
+.button-about-me__download {
+	background-color: #27CBFF;
+	flex: 0 1 200px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	color: #fffdfd;
+	transition: all 0.2s ease 0s;
+}
+
+.button-about-me__download:hover {
+	box-shadow: 0px 0px 7px 3px #27CBFF;
+
+}
+
+.button-about-me__contact {
+	background-color: #27CBFF;
+	flex: 0 1 200px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.2s ease 0s;
+
+}
+
+.button-about-me__contact:hover {
+	box-shadow: 0px 0px 7px 3px #27CBFF;
+}
+
+.button-about-me__number {
+	background-color: #27CBFF;
+	position: absolute;
+	top: 10px;
+	left: -130px;
+	opacity: 1;
+	transition: all 0.2s ease 0s;
+
+}
+
+.button-about-me__contact:hover .button-about-me__number {
+	top: 10px;
+	left: 33px;
+	opacity: 1;
+}
+
+/* ======= */
+.experience {
+	margin-bottom: 150px;
+}
+
+.experince__container {}
+
+[class*="__main-title"] {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #454444;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.experince__main-title {}
+
+.experience-cards {
+	columns: 2 200px;
+	gap: 100px;
+	column-rule: 4px solid #27CBFF;
+}
+
+.experience-card {
+	break-inside: avoid;
+	background-color: rgb(252, 247, 247);
+	box-shadow: 0px 4px 9px 1px rgb(0 0 0 / 12%);
+}
+
+.experience-card:not(:last-child) {
+	margin-bottom: 80px;
+}
+
+
+.experience-card__header {
+	background-color: #454444;
+	padding: 20px 20px;
+	color: #fffdfd;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.header-experience-card {}
+
+.experience-card__content {
+	padding: 10px 15px 25px 15px;
+}
+
+.experience-card__text {}
+
+.experience-card__text_bolt {
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+
+.experience-card__links {}
+
+.experience-card__link {
+	background: url('../img/check_24px_outlined.svg') 0 0 no-repeat;
+	padding-left: 28px;
+}
+
+.experience-card__link:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+/* ============= */
+
+.skills {}
+
+.skills__container {}
+
+.skills__body {
+	margin-bottom: 20px;
+}
+
+.skills__main-title {}
+
+.skills-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+
+}
+
+.skills-card {
+	background-color: #454444;
+	flex: 1 0 31.333%;
+	/*box-shadow: 0px 1px 1px 3px rgb(0 0 0 / 50%);*/
+}
+
+.skills-card__header {
+	padding: 20px 20px;
+	color: #fffdfd;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.skills-card__content {
+	padding: 0px 10px;
+}
+
+.skills-card__box {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.skills-card__text {
+	flex: 0 1 388px;
+	color: #fffdfd;
+	padding: 0px 20px 20px 0px;
+
+}
+
+.skills-card__level {
+	color: #fffdfd;
+}
